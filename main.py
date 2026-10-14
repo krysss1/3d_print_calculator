@@ -8,7 +8,7 @@ while True:
     if choise == 1:
         weight = int(input('Введите вес модели: '))
         hrs = int(input('Сколько часов печаталась модель?: '))
-        print(round(prices["Price"]/weight)+(hrs*prices["Price-hrs"]))
+        print(round((prices["Price"]/weight)+(hrs*prices["Price-hrs"]), 1))
     elif choise == 2:
         choise1 = input(f'Цена за 1 кг пластика: {prices["Price"]}\n Цена за 1 час печати:{prices["Price-hrs"]}\n Изменить? Y/N\n')
         if choise1.upper() == 'Y':
